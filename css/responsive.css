@@ -1,0 +1,461 @@
+/* for ipads and tablets */
+@media screen and (max-width: 768px) {
+  body {font-size: var(--size-14);}
+
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+  
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-self: center;
+    width: 100%;
+    background-color: var(--white);
+  }
+
+  [aria-expanded="true"] ~  .navbar-link > .link-media {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    background-color: white;
+    width: 100%;
+    height: 900%;
+    padding-top: 80px;
+    padding-left: 170px;
+    border-top: 1px solid var(--font-color-contrast);
+  }
+  
+
+  [aria-expanded="true"] ~ ul > .bttn-1 {
+    position: absolute;
+    top: 250px;
+    left: 330px;
+    width: 100px;
+  }
+
+  .bg-cont {display: block;}
+
+  .header-wrapper {
+    text-align: center;
+  }
+
+  .header-wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .header-icons {
+    margin-top: 80px;
+    margin-left: 120px;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 30px);
+    column-gap: 1.875rem;
+    row-gap: 7.25rem;
+    grid-template-areas: 
+     "google atlas . asana"
+     "paypal . weave ."
+     ". goog . calendar";
+  }
+
+  .benefits {
+    margin-top: -200px
+  }
+
+  .cards br {display: none;}
+
+  .cards p {font-size: 12px;}
+
+  .cards div {padding-top: 0;}
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1px;
+    margin-bottom: 100px;
+  }
+
+  .banner-side br {display: none;}
+
+  .banner-side h3 {font-size: 25px;}
+  
+  .banner-side {
+    text-align: center;
+    margin: 0;
+  }
+
+  .banner-image {
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .banner-main {margin-bottom: 20px;}
+
+  .circle h1 {
+    padding-left: 1.375rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .second-banner {
+    height: 18.25rem;
+    margin: 5rem 1rem;
+  }
+
+  #span-vid {
+    margin-top: 7rem;
+    margin-left: 45%;
+  }
+
+  .hubspot {margin-bottom: 1rem;}
+
+  .hubspot-pics {
+    margin-left: 50px;
+    display: flex;
+    width: 400px;
+  }
+
+  .img1{
+    position: relative;
+    left: -360px;
+  }
+
+  .hubspot-words {
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  .wordsh4 br {display: none;}
+
+  .trusted {
+    padding-top: 16px;
+    padding-bottom: 5px
+  }
+
+  .trusted-logos img {  swidth: 5rem;}
+
+  .pricing-month {
+    width: 700px;
+    margin-left: 60px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .pricing-month h1 {margin: 0;}
+
+  .pricing-month hr {margin-top: 1px;}
+
+  .pricing-p br {display: none;}
+
+  .pricing-p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .pricing-month > .play-video {padding: 0.6rem 2rem;}
+
+  .pricing-regular {
+    place-items: center;
+    width: 600px;
+    margin-left: 80px;
+  }
+
+  .pricing-regular br {display: none;}
+
+  .hire-us-pt1 {
+    margin-top: 0;
+    display: flex
+  }
+
+  .hire-us-pt1-left {
+    width: 350px;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+
+  .hire-us-pt1-left h3 {margin-bottom: 5px;}
+
+  #hire-us-p > br {display: none;}
+
+  .hire-us-pt1-left hr {margin: 0;}
+
+  #comment {margin-top: 15px;}
+
+  .hire-us-pt1-right {
+    margin-top: 30px;
+    padding-left: 30px;
+  }
+
+  .hire-us-pt2 {
+    margin-top: -30px;
+    padding-top: 0;
+    padding-left: 50px;
+  }
+
+  .hire-us-pt2  br {display: none;}
+
+  .hire-us-pt2 #comments-hire {
+    width: -webkit-fill-available;
+    margin-right: 14px;
+  }
+
+  .hire-us-pt2 #name {width: 17.4rem;}
+
+  .checkbox-words {font-size: 13.5px;}
+
+  #check-words {justify-content: left;}
+
+  #check-words p {margin-right: 40px;}
+
+  .get-started {margin-left: 40%;}
+
+  .footer-wrapper {
+    font-size: 12px;
+    display: flex;
+  }
+
+  .footer-one-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+  }
+
+  .footer-bottom {margin-bottom: 40px;}
+
+  .footer-left {
+    font-size: 12px;
+  margin-top: 10px;}
+
+  .footer-right i {margin-right: 5px;}
+
+  #us {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .footer-words {font-size: 12px}
+}
+
+@media screen and (max-width:480px) {
+  [aria-expanded="true"] ~  .navbar-link > .link-media {
+    display: initial;
+    text-align: center;
+    padding-left: 0;
+    line-height: 50px;
+  }
+
+  [aria-expanded="true"] ~ ul > .bttn-1 {
+    position: absolute;
+    top: 450px;
+    left: 175px;
+    width: 120px;
+  }
+
+  .navbar {
+    background-color: none;
+    position: relative;
+    width: 100%;
+  }
+
+  .bg-header {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .header-wrapper br {display: none;}
+
+  .header-wrapper h1 {font-size: 2rem;}
+
+  .header-wrapper p {font-size: 20px;}
+
+  .header-icons {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .benefits-header p {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .cards {grid-template-columns: repeat(1, 1fr);}
+
+  .cards div {margin-top: 30px;}
+
+  .banner-side br {display: none;}
+
+  .banner-side h3 {
+    font-size: 30px;
+    padding: 0px 64px;
+  }
+
+  .why-front br {display: none;}
+
+  .why-front h3 {margin-bottom: 10px;}
+
+  .why-front p {font-size: 22px}
+
+  .circle hr {display: none;}
+
+  .why-front-circle {display: flex;}
+
+  .circle {display: block;}
+
+  .circle h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 1.7rem;
+  }
+
+  .words {
+    display: block;
+    margin-top: 30px;
+    margin-left: 19px;
+  }
+
+  .words p {margin-bottom: 78px;}
+
+  .second-banner {
+    margin: 0px 0px 50px 0px;
+    height: 12rem;
+  }
+
+  #span-vid {margin-top: 3.5rem;}
+
+  .img2 {
+    height: 20rem;
+    left: 3rem;
+  }
+
+  .img1 {
+    height: 20rem;
+    left: -285px;
+  }
+
+  .hubspot-words {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hubspot-words > img {margin-top: 0;}
+
+  .wordsh4 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .trusted-logos {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .pricing-header {margin-top: 50px;}
+
+  .pricing-month {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 40px 40px;
+  }
+
+  .pricing-month hr {margin: 30px 0;}
+
+  .pricing-cards {margin-bottom: 50px;}
+
+  .pricing-p {font-size: 23px;}
+
+  .pricing-regular {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 15px;
+  }
+
+  .cancel, .money {width: 449px;}
+
+  .hire-us-pt1 {
+    display: block;
+    text-align: center;
+  }
+
+  .hire-us-img {justify-content: center;}
+
+  .hire-us-pt2 {width: -webkit-fill-available;}
+
+  .hire-us-pt2 h4 {font-size: 20px;}
+
+  .hire-us-pt2 #name {width: 18.3rem;}
+
+  #check-words > a {display: none;}
+
+  .get-started {margin-left: 25%}
+
+  .footer-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-one {text-align: center;}
+
+  .addy-icons {
+    margin-left: 40px;
+    font-size: 20px;
+  }
+
+  .phone {
+    font-size: 18px;
+    margin-left: 130px;
+  }
+
+  .footer-one-right h4 {font-size: 14px;}
+
+  .footer-one-right {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-two span {font-size: 8px;}
+
+  .help {margin-left: 45%;}
+
+  .help i, .account i {margin-top: 0.1rem;}
+
+  .account {margin-left: 40%;}
+
+  .footer-bottom {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-left {font-size: 16px;}
+
+  .footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+  }
+
+  .footer-right i {
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  #us {width: 200px;}
+
+  .footer-words br {display: none;}
+
+  .footer-words {font-size: 20px;}
+}
+
